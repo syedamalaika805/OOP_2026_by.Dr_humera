@@ -1,2 +1,2 @@
 # OOP_2026_by.Dr_humera
-Malaika Mushtaq, section "C"
+Malaika Mushtaq, BSCS 2nd semester section "C"
