@@ -1,0 +1,64 @@
+Objective:
+The objective of this assignment is to understand the basic concept of Object-Oriented Programming (OOP) by identifying classes, objects, attributes, and methods from real-life examples.
+Introduction:
+Object-Oriented Programming (OOP) is a programming approach in which real-world things are represented as objects. Every object has its own data (attributes) and actions (methods). Before writing any program, we should think about which objects are involved and what they can do.
+Class:
+A class is a blueprint or template used to create objects. It defines the properties and behaviors of an object. Class is a user define data type.
+Example: class -> student.
+Object:
+An object is an instance of a class. It represents a real-world entity.
+Example: student name : Malaikah
+Real life example:
+car.java
+class Car {
+
+    // Attributes
+    String brand;
+    String color;
+    int speed;
+
+    // Methods
+    void start() {
+        System.out.println("Car Started");
+    }
+
+    void accelerate() {
+        System.out.println("Car is Accelerating");
+    }
+
+    void brake() {
+        System.out.println("Car is Applying Brakes");
+    }
+
+    void stop() {
+        System.out.println("Car Stopped");
+    }
+
+    void display() {
+        System.out.println("Brand : " + brand);
+        System.out.println("Model : " + model);
+        System.out.println("Color : " + color);
+        System.out.println("Speed : " + speed + " km/h");
+    }
+Main.java
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car1 = new Car();
+
+        car1.brand = "Toyota";
+        car1.color = "Black";
+        car1.speed = 60;
+
+        car1.display();
+
+        System.out.println();
+
+        car1.start();
+        car1.accelerate();
+        car1.brake();
+        car1.stop();
+    }
+}
+}
