@@ -1,0 +1,83 @@
+point.java
+class Point {
+    int x;
+    int y;
+
+    // Default Constructor
+    Point() {
+        x = 0;
+        y = 0;
+    }
+
+    // Parameterized Constructor
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    // Copy Constructor
+    Point(Point p) {
+        this.x = p.x;
+        this.y = p.y;
+    }
+
+    // Addition
+    Point add(Point p) {
+        return new Point(this.x + p.x, this.y + p.y);
+    }
+
+    // Subtraction
+    Point subtract(Point p) {
+        return new Point(this.x - p.x, this.y - p.y);
+    }
+
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
+}
+
+Triangle Class (Using Point Class)
+class Triangle {
+
+    Point p1;
+    Point p2;
+    Point p3;
+
+    Triangle(Point p1, Point p2, Point p3) {
+        this.p1 = p1;
+        this.p2 = p2;
+        this.p3 = p3;
+    }
+
+    void display() {
+        System.out.println("Point 1 : " + p1);
+        System.out.println("Point 2 : " + p2);
+        System.out.println("Point 3 : " + p3);
+    }
+}
+Stack and Heap Visualization (Point Addition)
+Point p1 = new Point(3,4);
+Point p2 = new Point(2,5);
+
+Point sum = p1.add(p2);
+
+Stack:
+main()
+
+p1  --->
+p2  --->
+sum --->
+
+Heap:
+
+Point            
+x = 3
+y = 4
+
+Point            
+x = 2
+y = 5
+
+Point
+x = 5            
+y = 9
